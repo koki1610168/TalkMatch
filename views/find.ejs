@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="data.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <main class="grid">
+            <% for(var i = 0; i < users.length; i++) { %>
+                <article>
+                    <div class="text">
+                        <p><%= users[i].native %></p>
+                        <h4><%= users[i].topic %></h4>
+                        <a href='<%= users[i].roomId %>' class="button deleteButton"
+                            data-topic="<%=  users[i].topic %>"
+                            data-native="<%= users[i].native %>"
+                            data-roomId="<%= users[i].roomId %>">Start</a>
+                    </div>
+                </article>
+            <% } %>
+        </main> 
+    </div>
+    <script src="find.js"></script>
+</body>
+</html>

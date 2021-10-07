@@ -1,0 +1,35 @@
+{
+  "name": "learn-english-quick",
+  "version": "1.0.0",
+  "description": "first server",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.2",
+    "nodemon": "^2.0.12",
+    "socket.io": "^4.2.0",
+    "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "15.x",
+    "npm": "6.x.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jomaoppa/node-js-template.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Koki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jomaoppa/node-js-template/issues"
+  },
+  "homepage": "https://github.com/jomaoppa/node-js-template#readme"
+}

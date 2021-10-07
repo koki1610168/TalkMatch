@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    min-height: 650px;
+	background: #f7f7f7 url(/images/orange.png) center top/cover no-repeat;
+}
+
+
+
+
+h1 {
+    font-weight: 500;
+    font-size: 4.5rem;
+    color: #fff
+}
+
+#start {
+    margin-top: 60px;
+}
+
+#lan {
+    margin-top: 50px;
+}
+
+.features p {
+    font-weight: 300;
+    font-size: 2.2rem;
+}
+
+
+.features .profile {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.features .img {
+    display: flex;
+    margin-top:3rem;
+}
+
+.features .i2 {
+    justify-content: right;
+}
+
+#end {
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+#wait {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    justify-content: center;
+    border-radius: 100px;
+}
+.page {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.page h1 {
+    color: #000;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.page h4 {
+    font-size: 30px;
+    margin-bottom: 200px;
+}
+
+.page a {
+    font-size: 80px;
+    
+    background: #FF9636;
+    font-weight: 500;
+    padding: 0.2rem 0.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.page a:hover {
+    color: #FF9636;
+    background-color: #000;
+}
+
+svg {
+    fill: none;
+    stroke: #FF9636;
+    stroke-width: 10;
+    stroke-dasharray: 230 230;
+    animation: loader 2s infinite, loading 2s infinite linear;
+    vertical-align: middle;
+    stroke-linecap: round;
+    animation: loader 1.4s infinite cubic-bezier(.4,0,.3,1), loading 1.2s infinite linear;
+}
+.s1 { 
+    animation-duration: 1.2s, 1.8s; 
+}
+.loading {
+    text-align: center;
+    margin-top: 100px;
+}
+@keyframes loader {
+    from { stroke-dashoffset: 230; }
+    to { stroke-dashoffset: -230; }
+}
+@keyframes loading {
+    from { transform: none; }
+    to { transform: rotate(360deg); }
+}
+
+@media (max-width: 1500px) {
+    .page {
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    .page h1 {
+        font-size: 60px;
+        font-weight: 900;
+    }
+    
+    .page h4 {
+        font-size: 40px;
+        margin-bottom: 100px;
+    }
+    .page a {
+        font-size: 40px;
+        
+    }
+    .loading {
+        text-align: center;
+        margin-top: 40px;
+    }
+}

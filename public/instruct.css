@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 60px
+
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    
+    height: 3px!important;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+.navbar {
+    background-color: #fff;
+    z-index: 1000;
+
+}
+.navbar-brand {
+    padding-left: 4rem;
+    font-family: 'Cookie', sans-serif;
+    font-size: 1.5rem;
+}
+
+.navbar-nav {
+    padding-right: 2rem;
+    font-weight: 500;
+}
+
+#navbarNav > ul > li:nth-child(n) > a {
+    padding: 0.3 0.8rem;
+    font-size: 1.5rem;
+}
+
+#navbarNav > ul > li:nth-child(n) > a:hover {
+    color: #FF9636;
+}
+
+.btn a {
+    background: #FF9636;
+    font-weight: 700;
+    padding: 0.6rem 0.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+
+}
+
+.btn a:hover {
+  transform: translateY(5px);
+  box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.2);
+}
+
+.mid {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    background-color: #f3a358;
+    align-content: center;
+}
+
+.mid img {
+    width: 57%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.explain {
+    margin-top: 200px;
+}
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+        font-weight: 800;
+    }
+
+}
